@@ -1,0 +1,4 @@
+#JSGF V1.0;
+
+grammar commands;
+public <greet> = (public | static | void | main | string | array | integer | boolean);
