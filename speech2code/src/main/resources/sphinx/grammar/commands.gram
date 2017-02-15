@@ -1,4 +1,12 @@
 #JSGF V1.0;
 
 grammar commands;
-public <greet> = (public | static | void | main | string | array | integer | boolean);
+public <create> = ((create (string | main method | class)) | print [line]| if statement | (for | while) loop );
+<alphabet> = (alpha | bravo | charlie | delta | echo | fox | golf | hotel | india | juliet |
+ kilo | lima | mike | november | oscar | papa | quebec | romeo | sierra | tango | uniform | victor |
+  whiskey | x-ray | yankee | zulu );
+public <expression> = ([capital] <alphabet> | zero | one | two | three | four | five | six | seven | eight | nine | true | false | equals equals | equals | not | more than | less than
+| more or equal | less or equal | not equals | plus [plus]| minus [minus]| times | divide | modulus | space | int | string
+| next | back [space] | (previous | next) line | undo | semi colon | new line );
+
+

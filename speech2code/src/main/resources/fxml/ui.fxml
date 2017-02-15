@@ -3,6 +3,7 @@
 <?import javafx.scene.layout.*?>
 <?import fxelements.EditorStackPane?>
 
+<?import javafx.scene.text.Text?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" fx:controller="controllers.Controller" xmlns="http://javafx.com/javafx/8" fx:id="root" xmlns:fx="http://javafx.com/fxml/1">
     <top>
         <VBox prefHeight="28.0" prefWidth="600.0" BorderPane.alignment="CENTER">
@@ -26,6 +27,15 @@
                         </Menu>
                     </menus>
                 </MenuBar>
+                <ToolBar>
+                    <TextField fx:id="commandText" disable="true"></TextField>
+                    <Button fx:id="runButton" alignment="CENTER">Run</Button>
+                    <Pane HBox.hgrow="ALWAYS"></Pane>
+                    <CheckBox fx:id="inputCheckBox"></CheckBox>
+                    <TextField fx:id="inputText"></TextField>
+                    <Button fx:id="inputButton">Apply</Button>
+                </ToolBar>
+
             </children>
         </VBox>
     </top>
@@ -35,4 +45,7 @@
     <center>
         <EditorStackPane fx:id="editorStackPane"></EditorStackPane>
     </center>
+    <bottom>
+        <TextArea fx:id="console"></TextArea>
+    </bottom>
 </BorderPane>

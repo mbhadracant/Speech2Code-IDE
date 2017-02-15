@@ -1,0 +1,56 @@
+package codeoperations.create.actions;
+
+import codeoperations.CodeAction;
+import fxelements.JavaCodeArea;
+import javafx.application.Platform;
+import utilities.EditorNavigator;
+
+/**
+ * Created by mb on 22/01/2017.
+ */
+public class CreateForLoopAction extends CodeAction {
+    String codeToInsert;
+
+    public CreateForLoopAction() {
+
+    }
+
+    @Override
+    public void init() {
+        StringBuilder template = new StringBuilder();
+        template.append("for() {\n");
+
+        for (int i = 0; i < JavaCodeArea.SCOPE_LEVEL; i++) {
+            template.append("\t");
+        }
+
+        template.append("\n");
+
+        for (int i = 0; i < JavaCodeArea.SCOPE_LEVEL-1; i++) {
+            template.append("\t");
+        }
+
+        template.append("}");
+        codeToInsert = template.toString();
+    }
+
+    @Override
+    public void set(String parameter) {
+
+    }
+
+    @Override
+    public void execute(JavaCodeArea editor) {
+        try {
+            Platform.runLater(() ->  {
+                editor.insertText(editor.getCaretPosition(), codeToInsert);
+                EditorNavigator.moveUp(2);
+                EditorNavigator.endLine();
+                EditorNavigator.moveLeft(3);
+            });
+
+        } catch(NullPointerException e) {
+            System.out.println("null pointer");
+        }
+    }
+}

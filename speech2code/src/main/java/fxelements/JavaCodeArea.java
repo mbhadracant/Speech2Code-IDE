@@ -15,14 +15,27 @@ import java.util.regex.Pattern;
  */
 public class JavaCodeArea extends CodeArea {
 
+    public static int SCOPE_LEVEL = 1;
+
     public JavaCodeArea() {
         super();
         this.setParagraphGraphicFactory(LineNumberFactory.get(this));
         this.richChanges()
-                .filter(ch -> !ch.getInserted().equals(ch.getRemoved())) // XXX
+                .filter(ch -> !ch.getInserted().equals(ch.getRemoved()))
                 .subscribe(change -> {
                     this.setStyleSpans(0, computeHighlighting(this.getText()));
                 });
+
+        this.caretPositionProperty().addListener(event -> {
+            String code = this.getText().substring(0, this.getCaretPosition());
+            int scopeLevel = 1;
+
+            for(char c : code.toCharArray()) {
+                if(c == '{') scopeLevel++;
+                if(c == '}') scopeLevel--;
+            }
+            SCOPE_LEVEL = scopeLevel;
+        });
     }
 
     private static final String[] KEYWORDS = new String[] {
@@ -78,4 +91,5 @@ public class JavaCodeArea extends CodeArea {
         spansBuilder.add(Collections.emptyList(), text.length() - lastKwEnd);
         return spansBuilder.create();
     }
+
 }
