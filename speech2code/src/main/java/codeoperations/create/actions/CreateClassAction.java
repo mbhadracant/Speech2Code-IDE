@@ -1,10 +1,14 @@
 package codeoperations.create.actions;
 
 import codeoperations.CodeAction;
+import controllers.Controller;
 import fxelements.JavaCodeArea;
 import javafx.application.Platform;
+import javafx.scene.Node;
 import speechanalyser.Analyser;
 import utilities.EditorNavigator;
+
+import java.util.Map;
 
 /**
  * Created by mb on 22/01/2017.
@@ -18,40 +22,36 @@ import utilities.EditorNavigator;
     }
 
     @Override
-    public void init() {
-        StringBuilder template = new StringBuilder();
-        template.append("public class  {\n");
-
-        for (int i = 0; i < JavaCodeArea.SCOPE_LEVEL; i++) {
-            template.append("\t");
-        }
-
-        template.append("\n");
-
-        for (int i = 0; i < JavaCodeArea.SCOPE_LEVEL-1; i++) {
-            template.append("\t");
-        }
-
-        template.append("}");
-        codeToInsert = template.toString();
-    }
-
-
-    @Override
     public void set(String parameter) {
 
     }
 
     @Override
-    public void execute(JavaCodeArea editor) {
+    public void execute(Map<Controller.UI, Node> uiMap) {
         try {
-            System.out.println(codeToInsert == null);
+            JavaCodeArea editor = (JavaCodeArea) uiMap.get(Controller.UI.EDITOR);
+            if(editor == null) return;
             Platform.runLater(() -> {
+                StringBuilder template = new StringBuilder();
+                template.append("public class  {\n");
+
+                for (int i = 0; i < editor.SCOPE_LEVEL; i++) {
+                    template.append("\t");
+                }
+
+                template.append("\n");
+
+                for (int i = 0; i < editor.SCOPE_LEVEL-1; i++) {
+                    template.append("\t");
+                }
+
+                template.append("}");
+                codeToInsert = template.toString();
                 editor.insertText(editor.getCaretPosition(), codeToInsert);
                 EditorNavigator.moveUp(2);
                 EditorNavigator.moveLeft(2);
+                editor.undoStack.add(new JavaCodeArea.TextCaretPair(editor.getText(), editor.getCaretPosition()));
             });
-            Analyser.CAN_ONLY_SAY_LETTER_OR_DIGIT = true;
         } catch(NullPointerException e) {
             System.out.println("null pointer");
         }

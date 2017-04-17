@@ -12,38 +12,31 @@
                     <menus>
                         <Menu mnemonicParsing="false" text="File">
                             <items>
-                                <MenuItem mnemonicParsing="false" text="Close"/>
+                                <MenuItem mnemonicParsing="File" text="New File" fx:id="newFile"/>
+                                <MenuItem mnemonicParsing="false" text="Open File" fx:id="openFile" />
+                                <MenuItem mnemonicParsing="false" text="Save File" fx:id="saveFile"/>
+                                <MenuItem mnemonicParsing="false" text="Close File" fx:id="closeFile"/>
                             </items>
                         </Menu>
-                        <Menu mnemonicParsing="false" text="Edit">
-                            <items>
-                                <MenuItem mnemonicParsing="false" text="Delete" />
-                            </items>
-                        </Menu>
-                        <Menu mnemonicParsing="false" text="Help">
-                            <items>
-                                <MenuItem mnemonicParsing="false" text="About" />
-                            </items>
+                        <Menu mnemonicParsing="false" text="Help" fx:id="helpMenu">
+                            <MenuItem mnemonicParsing="false" text="Open Documentation" fx:id="openHelp"/>
                         </Menu>
                     </menus>
                 </MenuBar>
                 <ToolBar>
                     <TextField fx:id="commandText" disable="true"></TextField>
-                    <Button fx:id="runButton" alignment="CENTER">Run</Button>
-                    <Pane HBox.hgrow="ALWAYS"></Pane>
-                    <CheckBox fx:id="inputCheckBox"></CheckBox>
-                    <TextField fx:id="inputText"></TextField>
-                    <Button fx:id="inputButton">Apply</Button>
                 </ToolBar>
 
             </children>
         </VBox>
     </top>
-    <left>
-        <TreeView prefHeight="371.0" prefWidth="130.0" BorderPane.alignment="CENTER" />
-    </left>
+
     <center>
-        <EditorStackPane fx:id="editorStackPane"></EditorStackPane>
+        <TabPane prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" fx:id="tabPane">
+            <tabs>
+            </tabs>
+        </TabPane>
+
     </center>
     <bottom>
         <TextArea fx:id="console"></TextArea>

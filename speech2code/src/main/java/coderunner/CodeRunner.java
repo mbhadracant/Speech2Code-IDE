@@ -104,5 +104,9 @@ public class CodeRunner {
         }
 
     }
+
+    public void setConsole(TextArea console) {
+        this.console = console;
+    }
 }
 

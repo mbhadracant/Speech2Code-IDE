@@ -1,5 +1,6 @@
 package fxelements;
 
+import com.sun.xml.internal.fastinfoset.util.StringIntMap;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
 import org.fxmisc.richtext.model.StyleSpans;
@@ -7,6 +8,7 @@ import org.fxmisc.richtext.model.StyleSpansBuilder;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,8 +17,18 @@ import java.util.regex.Pattern;
  */
 public class JavaCodeArea extends CodeArea {
 
-    public static int SCOPE_LEVEL = 1;
+    public int SCOPE_LEVEL = 1;
+    public Stack<TextCaretPair> undoStack = new Stack();
 
+    public static class TextCaretPair {
+        public String text;
+        public int caretPosition;
+
+        public TextCaretPair(String text, int caretPosition) {
+            this.text = text;
+            this.caretPosition = caretPosition;
+        }
+    }
     public JavaCodeArea() {
         super();
         this.setParagraphGraphicFactory(LineNumberFactory.get(this));

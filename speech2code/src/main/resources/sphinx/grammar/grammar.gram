@@ -1,0 +1,282 @@
+#JSGF V1.0;
+
+grammar commands;
+
+<types> = ((primitive) (int | char | boolean | double | float));
+
+<alphabet> = (ant | bravo | charlie | delta | echo | fox | golf | hotel | insect | juliet |
+ kilo | lima | mike | november | oscar | papa | quail | romeo | seal | tango | uniform | victor |
+  whiskey | x-ray | yankee | zulu);
+
+public <create> = ((create (string | main method | class | [static] method [return] [<types>])) | print [line]| if statement | (for | while) loop );
+
+public <value> = ([capital] <alphabet> | zero | one | two | three | four | five | six | seven | eight | nine | true | false | equals equals | equals | not | more than | less than
+| more or equal | less or equal | not equals | plus [plus]| minus [minus]| times | divide | modulus | space | comma mark
+| next | back [space] | (previous | next) line | undo | [semi] colon | length | new line | <types> | static | return | dot | new | (curly | round | square | angle) (brackets)
+| and | or);
+
+public <ui> = (run program | close file | save file | next file | previous file | open file | new file | open help);
+
+public <classes> = (
+map |
+hash map |
+character |
+hash set |
+linked hash set |
+boolean |
+linked hash map |
+double |
+float |
+string |
+integer |
+tree set |
+set |
+linked list |
+tree map |
+array list |
+long |
+arrays |
+list |
+collections);
+
+public <methods> = (
+(call)
+(remove |
+sort |
+get |
+put |
+equals |
+values |
+hash code |
+clear |
+is empty |
+replace |
+replace all |
+size |
+entry set |
+put all |
+put if absent |
+key set |
+contains value |
+contains key |
+get or default |
+for each |
+compute if absent |
+compute if present |
+compute |
+merge |
+clone |
+to string |
+wait |
+get class |
+notify |
+notify all |
+is java identifier start |
+is java identifier part |
+reverse bytes |
+compare to |
+char value |
+value of |
+get name |
+code point at |
+code point before |
+code point count |
+offset by code points |
+to lower case |
+to upper case |
+is bmp code point |
+is valid code point |
+compare |
+high surrogate |
+low surrogate |
+char count |
+to chars |
+get type |
+is digit |
+is surrogate |
+is low surrogate |
+is high surrogate |
+is letter |
+is letter or digit |
+is supplementary code point |
+is surrogate pair |
+to code point |
+is lower case |
+is upper case |
+is title case |
+is defined |
+is java letter |
+is java letter or digit |
+is alphabetic |
+is ideographic |
+is unicode identifier start |
+is unicode identifier part |
+is identifier ignorable |
+to title case |
+digit |
+get numeric value |
+is space |
+is space char |
+is whitespace |
+is iso control |
+for digit |
+get directionality |
+is mirrored |
+add |
+contains |
+iterator |
+spliterator |
+remove all |
+to array |
+add all |
+contains all |
+retain all |
+stream |
+remove if |
+parallel stream |
+get boolean |
+boolean value |
+parse boolean |
+logical and |
+logical or |
+logical xor |
+min |
+max |
+double to raw long bits |
+double to long bits |
+long bits to double |
+byte value |
+short value |
+int value |
+long value |
+float value |
+double value |
+to hex string |
+is na n |
+is infinite |
+is finite |
+sum |
+parse double |
+float to raw int bits |
+float to int bits |
+int bits to float |
+parse float |
+index of |
+length |
+char at |
+get chars |
+get bytes |
+content equals |
+equals ignore case |
+compare to ignore case |
+region matches |
+starts with |
+ends with |
+last index of |
+substring |
+sub sequence |
+concat |
+matches |
+replace first |
+split |
+join |
+trim |
+to char array |
+format |
+copy value of |
+intern |
+chars |
+code points |
+number of leading zeros |
+number of trailing zeros |
+bit count |
+decode |
+reverse |
+to unsigned long |
+parse int |
+to unsigned string |
+to octal string |
+to binary string |
+parse unsigned int |
+get integer |
+compare unsigned |
+divide unsigned |
+remainder unsigned |
+highest one bit |
+lowest one bit |
+rotate left |
+rotate right |
+signum |
+first |
+floor |
+comparator |
+poll first |
+poll last |
+descending iterator |
+last |
+lower |
+ceiling |
+higher |
+descending set |
+sub set |
+head set |
+tail set |
+get first |
+push |
+pop |
+poll |
+set |
+peek |
+list iterator |
+add first |
+add last |
+offer first |
+offer last |
+remove first |
+remove last |
+get last |
+peek first |
+peek last |
+remove first occurrence |
+remove last occurrence |
+offer |
+element |
+sub list |
+sort |
+lower entry |
+lower key |
+floor entry |
+floor key |
+ceiling entry |
+ceiling key |
+higher entry |
+higher key |
+first entry |
+last entry |
+poll first entry |
+poll last entry |
+descending map |
+navigable key set |
+descending key set |
+sub map |
+head map |
+tail map |
+first key |
+last key |
+ensure capacity |
+trim to size |
+get long |
+parse long |
+parse unsigned long |
+copy of |
+copy of range |
+as list |
+fill |
+binary search |
+parallel sort |
+parallel prefix |
+deep hash code |
+deep equals |
+deep to string |
+set all |
+parallel set all));

@@ -24,6 +24,7 @@ public class App extends Application {
         deleteDir();
         File dir = new File("speech2code/src/main/java/temp");
         dir.mkdir();
+        primaryStage.setMaximized(true);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

@@ -1,0 +1,377 @@
+print~PRINT
+print line~PRINT_LINE
+create class~CLASS
+create main method~MAIN
+create string~STRING
+for loop~FOR
+while loop~WHILE
+if statement~IF
+back~BACK
+next~NEXT
+previous line~LINE_UP
+next line~LINE_DOWN
+back space~BACKSPACE
+undo~UNDO
+new line~NEW_LINE
+run program~RUN_PROGRAM
+close file~CLOSE_FILE
+save file~SAVE_FILE
+next file~NEXT_FILE
+previous file~PREV_FILE
+open file~OPEN_FILE
+new file~NEW_FILE
+open help~OPEN_HELP
+zero~VALUE
+one~VALUE
+two~VALUE
+three~VALUE
+four~VALUE
+five~VALUE
+six~VALUE
+seven~VALUE
+eight~VALUE
+nine~VALUE
+space~VALUE
+true~VALUE
+false~VALUE
+and~VALUE
+not~VALUE
+equals equals~VALUE
+equals~VALUE
+not equals~VALUE
+more than~VALUE
+less than~VALUE
+more or equals~VALUE
+less or equals~VALUE
+plus~VALUE
+minus~VALUE
+times~VALUE
+divide~VALUE
+modulus~VALUE
+minus minus~VALUE
+plus plus~VALUE
+primitive int~VALUE
+primitive boolean~VALUE
+new~VALUE
+dot~VALUE
+semi colon~VALUE
+colon~VALUE
+comma mark~VALUE
+length~VALUE
+and~VALUE
+or~VALUE
+ant~VALUE
+bravo~VALUE
+charlie~VALUE
+delta~VALUE
+echo~VALUE
+fox~VALUE
+golf~VALUE
+hotel~VALUE
+insect~VALUE
+juliet~VALUE
+kilo~VALUE
+lima~VALUE
+mike~VALUE
+november~VALUE
+oscar~VALUE
+papa~VALUE
+quail~VALUE
+romeo~VALUE
+seal~VALUE
+tango~VALUE
+uniform~VALUE
+victor~VALUE
+whiskey~VALUE
+x-ray~VALUE
+yankee~VALUE
+zulu~VALUE
+capital ant~VALUE
+capital bravo~VALUE
+capital charlie~VALUE
+capital delta~VALUE
+capital echo~VALUE
+capital fox~VALUE
+capital golf~VALUE
+capital hotel~VALUE
+capital insect~VALUE
+capital juliet~VALUE
+capital kilo~VALUE
+capital lima~VALUE
+capital mike~VALUE
+capital november~VALUE
+capital oscar~VALUE
+capital papa~VALUE
+capital quail~VALUE
+capital romeo~VALUE
+capital seal~VALUE
+capital tango~VALUE
+capital uniform~VALUE
+capital victor~VALUE
+capital whiskey~VALUE
+capital x-ray~VALUE
+capital yankee~VALUE
+capital zulu~VALUE
+curly brackets~VALUE
+square brackets~VALUE
+round brackets~VALUE
+angle brackets~VALUE
+map~CLASS_NAME
+hash map~CLASS_NAME
+character~CLASS_NAME
+hash set~CLASS_NAME
+linked hash set~CLASS_NAME
+boolean~CLASS_NAME
+linked hash map~CLASS_NAME
+double~CLASS_NAME
+float~CLASS_NAME
+string~CLASS_NAME
+integer~CLASS_NAME
+tree set~CLASS_NAME
+set~CLASS_NAME
+linked list~CLASS_NAME
+tree map~CLASS_NAME
+array list~CLASS_NAME
+long~CLASS_NAME
+arrays~CLASS_NAME
+list~CLASS_NAME
+collections~CLASS_NAME
+call remove~METHOD_NAME
+call sort~METHOD_NAME
+call get~METHOD_NAME
+call put~METHOD_NAME
+call equals~METHOD_NAME
+call values~METHOD_NAME
+call hash code~METHOD_NAME
+call clear~METHOD_NAME
+call is empty~METHOD_NAME
+call replace~METHOD_NAME
+call replace all~METHOD_NAME
+call size~METHOD_NAME
+call entry set~METHOD_NAME
+call put all~METHOD_NAME
+call put if absent~METHOD_NAME
+call key set~METHOD_NAME
+call contains value~METHOD_NAME
+call contains key~METHOD_NAME
+call get or default~METHOD_NAME
+call for each~METHOD_NAME
+call compute if absent~METHOD_NAME
+call compute if present~METHOD_NAME
+call compute~METHOD_NAME
+call merge~METHOD_NAME
+call clone~METHOD_NAME
+call to string~METHOD_NAME
+call wait~METHOD_NAME
+call get class~METHOD_NAME
+call notify~METHOD_NAME
+call notify all~METHOD_NAME
+call is java identifier start~METHOD_NAME
+call is java identifier part~METHOD_NAME
+call reverse bytes~METHOD_NAME
+call compare to~METHOD_NAME
+call char value~METHOD_NAME
+call value of~METHOD_NAME
+call get name~METHOD_NAME
+call code point at~METHOD_NAME
+call code point before~METHOD_NAME
+call code point count~METHOD_NAME
+call offset by code points~METHOD_NAME
+call to lower case~METHOD_NAME
+call to upper case~METHOD_NAME
+call is bmp code point~METHOD_NAME
+call is valid code point~METHOD_NAME
+call compare~METHOD_NAME
+call high surrogate~METHOD_NAME
+call low surrogate~METHOD_NAME
+call char count~METHOD_NAME
+call to chars~METHOD_NAME
+call get type~METHOD_NAME
+call is digit~METHOD_NAME
+call is surrogate~METHOD_NAME
+call is low surrogate~METHOD_NAME
+call is high surrogate~METHOD_NAME
+call is letter~METHOD_NAME
+call is letter or digit~METHOD_NAME
+call is supplementary code point~METHOD_NAME
+call is surrogate pair~METHOD_NAME
+call to code point~METHOD_NAME
+call is lower case~METHOD_NAME
+call is upper case~METHOD_NAME
+call is title case~METHOD_NAME
+call is defined~METHOD_NAME
+call is java letter~METHOD_NAME
+call is java letter or digit~METHOD_NAME
+call is alphabetic~METHOD_NAME
+call is ideographic~METHOD_NAME
+call is unicode identifier start~METHOD_NAME
+call is unicode identifier part~METHOD_NAME
+call is identifier ignorable~METHOD_NAME
+call to title case~METHOD_NAME
+call digit~METHOD_NAME
+call get numeric value~METHOD_NAME
+call is space~METHOD_NAME
+call is space char~METHOD_NAME
+call is whitespace~METHOD_NAME
+call is iso control~METHOD_NAME
+call for digit~METHOD_NAME
+call get directionality~METHOD_NAME
+call is mirrored~METHOD_NAME
+call add~METHOD_NAME
+call contains~METHOD_NAME
+call iterator~METHOD_NAME
+call spliterator~METHOD_NAME
+call remove all~METHOD_NAME
+call to array~METHOD_NAME
+call add all~METHOD_NAME
+call contains all~METHOD_NAME
+call retain all~METHOD_NAME
+call stream~METHOD_NAME
+call remove if~METHOD_NAME
+call parallel stream~METHOD_NAME
+call get boolean~METHOD_NAME
+call boolean value~METHOD_NAME
+call parse boolean~METHOD_NAME
+call logical and~METHOD_NAME
+call logical or~METHOD_NAME
+call logical xor~METHOD_NAME
+call min~METHOD_NAME
+call max~METHOD_NAME
+call double to raw long bits~METHOD_NAME
+call double to long bits~METHOD_NAME
+call long bits to double~METHOD_NAME
+call byte value~METHOD_NAME
+call short value~METHOD_NAME
+call int value~METHOD_NAME
+call long value~METHOD_NAME
+call float value~METHOD_NAME
+call double value~METHOD_NAME
+call to hex string~METHOD_NAME
+call is na n~METHOD_NAME
+call is infinite~METHOD_NAME
+call is finite~METHOD_NAME
+call sum~METHOD_NAME
+call parse double~METHOD_NAME
+call float to raw int bits~METHOD_NAME
+call float to int bits~METHOD_NAME
+call int bits to float~METHOD_NAME
+call parse float~METHOD_NAME
+call index of~METHOD_NAME
+call length~METHOD_NAME
+call char at~METHOD_NAME
+call get chars~METHOD_NAME
+call get bytes~METHOD_NAME
+call content equals~METHOD_NAME
+call equals ignore case~METHOD_NAME
+call compare to ignore case~METHOD_NAME
+call region matches~METHOD_NAME
+call starts with~METHOD_NAME
+call ends with~METHOD_NAME
+call last index of~METHOD_NAME
+call substring~METHOD_NAME
+call sub sequence~METHOD_NAME
+call concat~METHOD_NAME
+call matches~METHOD_NAME
+call replace first~METHOD_NAME
+call split~METHOD_NAME
+call join~METHOD_NAME
+call trim~METHOD_NAME
+call to char array~METHOD_NAME
+call format~METHOD_NAME
+call copy value of~METHOD_NAME
+call intern~METHOD_NAME
+call chars~METHOD_NAME
+call code points~METHOD_NAME
+call number of leading zeros~METHOD_NAME
+call number of trailing zeros~METHOD_NAME
+call bit count~METHOD_NAME
+call decode~METHOD_NAME
+call reverse~METHOD_NAME
+call to unsigned long~METHOD_NAME
+call parse int~METHOD_NAME
+call to unsigned string~METHOD_NAME
+call to octal string~METHOD_NAME
+call to binary string~METHOD_NAME
+call parse unsigned int~METHOD_NAME
+call get integer~METHOD_NAME
+call compare unsigned~METHOD_NAME
+call divide unsigned~METHOD_NAME
+call remainder unsigned~METHOD_NAME
+call highest one bit~METHOD_NAME
+call lowest one bit~METHOD_NAME
+call rotate left~METHOD_NAME
+call rotate right~METHOD_NAME
+call signum~METHOD_NAME
+call first~METHOD_NAME
+call floor~METHOD_NAME
+call comparator~METHOD_NAME
+call poll first~METHOD_NAME
+call poll last~METHOD_NAME
+call descending iterator~METHOD_NAME
+call last~METHOD_NAME
+call lower~METHOD_NAME
+call ceiling~METHOD_NAME
+call higher~METHOD_NAME
+call descending set~METHOD_NAME
+call sub set~METHOD_NAME
+call head set~METHOD_NAME
+call tail set~METHOD_NAME
+call get first~METHOD_NAME
+call push~METHOD_NAME
+call pop~METHOD_NAME
+call poll~METHOD_NAME
+call set~METHOD_NAME
+call peek~METHOD_NAME
+call list iterator~METHOD_NAME
+call add first~METHOD_NAME
+call add last~METHOD_NAME
+call offer first~METHOD_NAME
+call offer last~METHOD_NAME
+call remove first~METHOD_NAME
+call remove last~METHOD_NAME
+call get last~METHOD_NAME
+call peek first~METHOD_NAME
+call peek last~METHOD_NAME
+call remove first occurrence~METHOD_NAME
+call remove last occurrence~METHOD_NAME
+call offer~METHOD_NAME
+call element~METHOD_NAME
+call sub list~METHOD_NAME
+call sort~METHOD_NAME
+call lower entry~METHOD_NAME
+call lower key~METHOD_NAME
+call floor entry~METHOD_NAME
+call floor key~METHOD_NAME
+call ceiling entry~METHOD_NAME
+call ceiling key~METHOD_NAME
+call higher entry~METHOD_NAME
+call higher key~METHOD_NAME
+call first entry~METHOD_NAME
+call last entry~METHOD_NAME
+call poll first entry~METHOD_NAME
+call poll last entry~METHOD_NAME
+call descending map~METHOD_NAME
+call navigable key set~METHOD_NAME
+call descending key set~METHOD_NAME
+call sub map~METHOD_NAME
+call head map~METHOD_NAME
+call tail map~METHOD_NAME
+call first key~METHOD_NAME
+call last key~METHOD_NAME
+call ensure capacity~METHOD_NAME
+call trim to size~METHOD_NAME
+call get long~METHOD_NAME
+call parse long~METHOD_NAME
+call parse unsigned long~METHOD_NAME
+call copy of~METHOD_NAME
+call copy of range~METHOD_NAME
+call as list~METHOD_NAME
+call fill~METHOD_NAME
+call binary search~METHOD_NAME
+call parallel sort~METHOD_NAME
+call parallel prefix~METHOD_NAME
+call deep hash code~METHOD_NAME
+call deep equals~METHOD_NAME
+call deep to string~METHOD_NAME
+call set all~METHOD_NAME
+call parallel set all~METHOD_NAME
