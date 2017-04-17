@@ -1,6 +1,5 @@
 package fxelements;
 
-import com.sun.xml.internal.fastinfoset.util.StringIntMap;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
 import org.fxmisc.richtext.model.StyleSpans;
