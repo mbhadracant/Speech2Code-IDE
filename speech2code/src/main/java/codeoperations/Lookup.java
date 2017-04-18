@@ -42,8 +42,7 @@ public class Lookup {
         actions.put(Statement.PREV_FILE, new PreviousFileAction());
         actions.put(Statement.NEW_FILE, new NewFileAction());
         actions.put(Statement.OPEN_HELP, new OpenHelpAction());
-
-
+        actions.put(Statement.CHAR, new CreateCharAction());
     }
 
     private static Lookup getInstance() {

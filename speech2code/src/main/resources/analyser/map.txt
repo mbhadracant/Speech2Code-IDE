@@ -3,6 +3,7 @@ print line~PRINT_LINE
 create class~CLASS
 create main method~MAIN
 create string~STRING
+create character~CHAR
 for loop~FOR
 while loop~WHILE
 if statement~IF
@@ -50,8 +51,10 @@ divide~VALUE
 modulus~VALUE
 minus minus~VALUE
 plus plus~VALUE
-primitive int~VALUE
+primitive integer~VALUE
 primitive boolean~VALUE
+primitive character~VALUE
+primitive double~VALUE
 new~VALUE
 dot~VALUE
 semi colon~VALUE

@@ -52,24 +52,4 @@ public class Trie {
 
         return curr.statement;
     }
-
-    public static void main(String[] args) throws IOException {
-        Trie t = new Trie();
-
-        File file = new File("speech2code/src/main/resources/analyser/map.txt");
-
-        FileReader reader = new FileReader(file);
-        BufferedReader br = new BufferedReader(reader);
-        String line = null;
-
-        while((line = br.readLine()) != null) {
-            String[] split = line.split("~");
-            String key = split[0];
-            String statement = split[1];
-
-            t.addNode(key,statement);
-        }
-
-    }
-
 }

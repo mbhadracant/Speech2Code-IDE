@@ -48,8 +48,10 @@ public class CreateValueAction extends CodeAction {
         expressionValueMap.put("modulus", "%");
         expressionValueMap.put("minus minus", "--");
         expressionValueMap.put("plus plus", "++");
-        expressionValueMap.put("primitive int", "int ");
+        expressionValueMap.put("primitive integer", "int ");
         expressionValueMap.put("primitive boolean", "boolean ");
+        expressionValueMap.put("primitive character", "char ");
+        expressionValueMap.put("primitive double", "double ");
         expressionValueMap.put("new", "new ");
         expressionValueMap.put("dot", ".");
         expressionValueMap.put("semi colon", ";");

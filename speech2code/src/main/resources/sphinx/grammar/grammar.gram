@@ -2,13 +2,13 @@
 
 grammar commands;
 
-<types> = ((primitive) (int | char | boolean | double | float));
+<types> = ((primitive) (integer | character | boolean | double));
 
 <alphabet> = (ant | bravo | charlie | delta | echo | fox | golf | hotel | insect | juliet |
  kilo | lima | mike | november | oscar | papa | quail | romeo | seal | tango | uniform | victor |
   whiskey | x-ray | yankee | zulu);
 
-public <create> = ((create (string | main method | class | [static] method [return] [<types>])) | print [line]| if statement | (for | while) loop );
+public <create> = ((create (string | character | main method | class | [static] method [return] [<types>])) | print [line]| if statement | (for | while) loop );
 
 public <value> = ([capital] <alphabet> | zero | one | two | three | four | five | six | seven | eight | nine | true | false | equals equals | equals | not | more than | less than
 | more or equal | less or equal | not equals | plus [plus]| minus [minus]| times | divide | modulus | space | comma mark

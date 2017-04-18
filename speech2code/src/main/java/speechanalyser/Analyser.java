@@ -13,10 +13,7 @@ import org.reflections.util.ClasspathHelper;
 import org.reflections.util.ConfigurationBuilder;
 import org.reflections.util.FilterBuilder;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.util.*;
 
@@ -31,10 +28,8 @@ public class Analyser {
 
     public Analyser() throws IOException {
 
-        File file = new File("speech2code/src/main/resources/analyser/map.txt");
-
-        FileReader reader = new FileReader(file);
-        BufferedReader br = new BufferedReader(reader);
+        InputStream is = this.getClass().getResourceAsStream("/analyser/map.txt");
+        BufferedReader br = new BufferedReader(new InputStreamReader(is));
         String line = null;
 
         while((line = br.readLine()) != null) {

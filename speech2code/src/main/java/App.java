@@ -20,11 +20,10 @@ public class App extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/ui.fxml"));
         primaryStage.setTitle("Speech2Code");
         Scene scene = new Scene(root, 1024, 768);
-        scene.getStylesheets().add(this.getClass().getResource("/css/java_keywords.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/css/java_keywords.css").toExternalForm());
         deleteDir();
         File dir = new File("speech2code/src/main/java/temp");
         dir.mkdir();
-        primaryStage.setMaximized(true);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
